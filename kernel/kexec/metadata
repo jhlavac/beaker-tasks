@@ -1,0 +1,16 @@
+#
+# Copyright 2019 Red Hat, Inc.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
+[General]
+name=/kernel/kexec
+description=Test the kexec system call.
+owner=Jan Hlavac <jhlavac@redhat.com>
+license=GPL-3.0-or-later
+
+[restraint]
+entry_point=./runtest.sh
+max_time=5m
+dependencies=kexec-tools
